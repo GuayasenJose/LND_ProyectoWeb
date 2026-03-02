@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+}
+h2 {
+    text-decoration: none;
+}
+p {
+    text-decoration: none;
+}
+body{
+    background-color: #222831;
+    
+    
+}
+.header{
+    background-color: #222831;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+.HeadTick:hover{
+  transform: scale(1.2);
+}
+.header .logo{
+    cursor: pointer;
+}
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+.header .nav img{
+    height: 20px;
+    width: auto;
+}
+.header .nav{
+    list-style:none;
+}
+.header .nav li{
+    display: inline-block;
+    padding: 0 20px;
+   
+}
+.header .nav li:hover{
+    transform: scale(1.1);
+}
+.header .nav a{
+    font-size: 700;
+    color: #eeeeeE;
+    text-decoration: none;
+}
+.header .nav li a:hover{
+    color: rgb(29, 192, 221);
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 5%;
+    text-align: center;
+  }
+
+  .header .logo {
+    margin-bottom: 15px;
+  }
+
+  .header .nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .header .nav li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .header .nav img {
+    height: 25px;
+    margin-top: 5px;
+  }
+
+}
+.seccion-tarifas{
+    background-color: #eeeeee;
+}
+
+.formulario-socio {
+    width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.formulario-socio h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #00ADB5;
+}
+
+.grupo-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.grupo-form label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.grupo-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.grupo-form input:focus {
+    border: 2px solid #00ADB5;
+}
+
+.btn-formulario {
+    width: 100%;
+    padding: 12px;
+    background-color: #00ADB5;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-formulario:hover {
+    background-color: #cc0000;
+}
+
+.tabla-precios {
+    width: 90%;
+    margin: 60px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.tabla-precios h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.tablas-tarifas{
+    width: 95%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1c1c1c;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #00ADB5;
+}
+
+thead th {
+    padding: 15px;
+    font-size: 18px;
+}
+
+tbody td {
+    padding: 20px;
+    border-bottom: 1px solid #333;
+    vertical-align: middle;
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-color: #292929;
+}
+
+.destacado {
+    background-color: #222;
+    border-left: 5px solid #ff0000;
+}
+
+.promo {
+    color: #ff4d4d;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-principal, .btn-secundario {
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-principal {
+    background-color: #ff0000;
+    color: white;
+}
+
+.btn-principal:hover {
+    background-color: #cc0000;
+}
+
+.btn-secundario {
+    background-color: transparent;
+    border: 2px solid #ff0000;
+    color: #ff0000;
+}
+
+.btn-secundario:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+/* Estilo de Redes */
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  background: #333;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.social-icon:hover {
+  background: #ac8c1a; /* Color de acento (amarillo Yelmo) */
+  color: #000;
+}
+
+/* Estilo de Políticas */
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-nav a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-copy {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+.footer-social img{
+  width: 35px;
+  height: 35px;
+}
