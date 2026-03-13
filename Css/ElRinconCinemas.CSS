@@ -61,6 +61,9 @@ body{
 .header .nav li a:hover{
     color: rgb(29, 192, 221);
 }
+
+
+
 @media (max-width: 768px) {
 
   .header {
